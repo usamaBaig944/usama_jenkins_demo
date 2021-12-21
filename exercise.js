@@ -13,7 +13,7 @@ var addTwoNumbers = function (l1, l2) {
     for (let index = 0; index < total.length; index++) {
         reverseList.unshift(parseInt(total[index]))
     }
-    console.log(reverseList)
+    console.log("two linked list nodes are added and their sum is reversed", reverseList)
 };
 var lengthOfLongestSubstring = function (s) {
     if (s[0] === " " || s.length == 1) return 1
@@ -37,9 +37,9 @@ var lengthOfLongestSubstring = function (s) {
             longestCountTemp += 1;
         }
     }
-    console.log(wordCount, actualCount, longestCountTemp)
+    console.log("length of longest substring was calculated", wordCount, actualCount, longestCountTemp)
     return actualCount > longestCountTemp ? actualCount : longestCountTemp;
 };
 
-lengthOfLongestSubstring("dvdf")
-//addTwoNumbers([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9])
+//lengthOfLongestSubstring("dvdf")
+addTwoNumbers([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9])
