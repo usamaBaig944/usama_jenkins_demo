@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'git pull origin main'
-        echo 'Pipeline pulled'
+        echo 'Pipeline pulled and you should see output'
         sh 'node exercise.js'
       }
     }
