@@ -1,6 +1,6 @@
-var addTwoNumbers = function(l1, l2) {
+var addTwoNumbers = function (l1, l2) {
     var firstReverseNumber = ""
-    var  secondReverseNumber = "";
+    var secondReverseNumber = "";
     for (let index = l1.length - 1; index >= 0; index--) {
         firstReverseNumber += l1[index]
     }
@@ -13,15 +13,15 @@ var addTwoNumbers = function(l1, l2) {
     for (let index = 0; index < total.length; index++) {
         reverseList.unshift(parseInt(total[index]))
     }
-   console.log(reverseList)
+    console.log(reverseList)
 };
-var lengthOfLongestSubstring = function(s) {
-    if(s[0] === " " || s.length == 1) return 1
+var lengthOfLongestSubstring = function (s) {
+    if (s[0] === " " || s.length == 1) return 1
     var wordCount = {};
     var longestCountTemp = 0;
     var actualCount = 0;
     for (let index = 0; index < s.length; index++) {
-        if (`${s[index]}` in wordCount){
+        if (`${s[index]}` in wordCount) {
             //key exist mean do some code
             if (longestCountTemp > actualCount)
                 actualCount = longestCountTemp;
@@ -32,15 +32,14 @@ var lengthOfLongestSubstring = function(s) {
             //resseting the condition here
             wordCount[s[index]] = 1
             longestCountTemp += 1;
-        }
-        else{
+        } else {
             wordCount[s[index]] = 1;
             longestCountTemp += 1;
         }
     }
-    console.log(wordCount,actualCount,longestCountTemp)
+    console.log(wordCount, actualCount, longestCountTemp)
     return actualCount > longestCountTemp ? actualCount : longestCountTemp;
 };
 
-lengthOfLongestSubstring("dvdf")
-//addTwoNumbers([9,9,9,9,9,9,9],[9,9,9,9])
+//lengthOfLongestSubstring("dvdf")
+addTwoNumbers([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9])
