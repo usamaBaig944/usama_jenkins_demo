@@ -41,5 +41,5 @@ var lengthOfLongestSubstring = function (s) {
     return actualCount > longestCountTemp ? actualCount : longestCountTemp;
 };
 
-//lengthOfLongestSubstring("dvdf")
-addTwoNumbers([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9])
+lengthOfLongestSubstring("dvdf")
+//addTwoNumbers([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9])
