@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Pipeline Build Initiating'
+        sh 'git pull origin main'
+        echo 'Pipeline pulled'
+        sh 'node exercise.js'
       }
     }
 
